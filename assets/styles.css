@@ -1,3 +1,113 @@
+:root {
+    --primary-color: navy;
+    --secondary-color: white;
+    --tertiary-color: teal;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    color: var(--tertiary-color);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.hero {
+    margin: 30px 10px 30px 100px;
+    text-align: right;
+}
+    /* <header> styles start */
 header {
-    background-color: aliceblue;
+    background-image: url("");  
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+    padding: 20px 35px;
+    background-color: var(--tertiary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+  
+header h1 {
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--primary-color);
+    margin: 0;
+}
+  
+header a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+  
+header nav {
+    margin: 10px 0;
+}
+  
+header nav ul {
+    border:black 1px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-decoration: underline;
+}
+  
+header nav ul li a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
+}
+/* <header> styles end */
+
+
+/* <section> styles */
+.flex-row {
+    margin: 30px 10px 30px 80x;
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-around;
+    height: 250px;
+}
+.flex-row div {
+    display:inline-block;
+}
+.section-title {
+    border-right: solid 3px var(--primary-color);
+    width: 175px;
+
+}
+
+.resume-img {
+    text-align: center;
+    width: 175px;
+}
+/* footer styles */
+footer {
+    margin: 30px 10px 30px 100px;
+    text-align: center;
+}
+
+.footer-class {
+    justify-content: center;
 }
