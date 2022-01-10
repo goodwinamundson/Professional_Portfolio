@@ -32,6 +32,12 @@ https://goodwinamundson.github.io/Professional_Portfolio
 
 The second link brings you to the live page.
 
+All the links on the website worked when I tested them. The website should appear as it does in the following screenshots:
+## screenshots
+[image1](assets/images/Screen Shot 2022-01-10 at 6.09.12 AM.png)
+[image2](assets/images/Screen Shot 2022-01-10 at 6.09.16 AM.png)
+[image3](assets/images/Screen Shot 2022-01-10 at 6.13.06 AM.png)
+
 Even though I know this assignment was pretty sloppy so far, I am going to go back and fix everything in the coming days. I know that doing well on this assignment benefits me a lot more outside of this course. 
 
 ##credits
