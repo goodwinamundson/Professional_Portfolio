@@ -1,7 +1,7 @@
 :root {
     --primary-color: #bd430a;
     --secondary-color: white;
-    --tertiary-color: teal;
+    --tertiary-color: rgb(6, 113, 146);
   }
 
 * {
@@ -38,6 +38,7 @@ header h1 {
     font-size: 40px;
     color: var(--primary-color);
     margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
   
 header a {
@@ -90,6 +91,7 @@ header nav ul li a:hover {
     bottom: 0; 
     color: var(--primary-color);
     margin: 0 50px 20px 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -98,7 +100,6 @@ header nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    border:rgba(0, 0, 0, 0.5) 1px solid;
 }
 .section-title .content {
     display: flex;
@@ -110,7 +111,6 @@ header nav ul li a:hover {
     width: 250px;
     min-height: 250px;
     padding: 20px;
-    border:rgba(0, 0, 0, 0.5) 1px solid;
 }
 
 .section-title h2 {
@@ -126,8 +126,19 @@ header nav ul li a:hover {
     height: 100%;
 }
 
+.my-photo {
+    background-image: url("./images/profile\ pic.jpeg"); 
+   
+    display: flex;
+
+    
+    overflow: hidden;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
 .content {
-    border:rgba(0, 0, 0, 0.5) 1px solid;
     padding: 20px;
     width: 80%;
     height: 100%
@@ -144,34 +155,20 @@ header nav ul li a:hover {
     flex-wrap: wrap;
     margin: 0 1% 1% 1%;
 }
-.first-project div {
-    height: 280px;
-    border:var(--tertiary-color) 10px solid;
+
+.first-project a {
     display: flex;
-    flex-wrap: wrap;
-    width: 48%;
-    justify-content: space-between;
-    align-content: space-around;
-    margin: 3.25% 0 1% 0;
-}
-.first-project h3 {
-    color: var(--primary-color);
-    border: var(--tertiary-color) 20px solid;
-    background-color: var(--tertiary-color);
-    float: left;
-    margin: 48% 0 48% 0;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    object-fit: cover;
 }
 
-
-.first-project:after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
-  }
-
+.first-project:hover {
+    opacity: .5;
+}
 
 .projects {
-    border:rgba(0, 0, 0, 0.5) 1px solid;
     width: 100%;
     height: 100%;
     display: flex;
@@ -198,13 +195,59 @@ header nav ul li a:hover {
     background-color: var(--tertiary-color);
     float: left;
 }
-.run-buddy-img {
-    background-image: url("./images/run_buddy.png");  
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll;
-    background-position: 80%;
+.portfolio-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    object-fit: cover;
 }
+
+.portfolio-img:hover {
+    opacity: .5;
+}
+
+.password-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.password-img:hover {
+    opacity: .5;
+}
+
+.run-buddy-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.run-buddy-img:hover {
+    opacity: .5;
+}
+
+.robot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    object-fit: cover;
+}
+.robot h3 {
+    z-index: 9999;
+    position: relative;
+    float: left;
+}
+.robot:hover {
+    opacity: 0.5;
+}
+
+
 .resume-img {
     text-align: center;
     width: 175px;
