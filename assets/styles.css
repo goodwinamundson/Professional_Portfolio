@@ -1,5 +1,5 @@
 :root {
-    --primary-color: navy;
+    --primary-color: #bd430a;
     --secondary-color: white;
     --tertiary-color: teal;
   }
@@ -15,13 +15,9 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-.hero {
-    margin: 30px 10px 30px 100px;
-    text-align: right;
-}
     /* <header> styles start */
 header {
-    background-image: url("");  
+    background-image: url("./images/hero-img.webp");  
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -77,27 +73,138 @@ header nav ul li a:hover {
     text-shadow: none;
 }
 /* <header> styles end */
+.hero {
+    background-image: url("./images/hero-img.webp");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 100%;
+    height: 200px;
+    position: relative;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+.hero-cta {
+    position:absolute;
+    bottom: 0; 
+    color: var(--primary-color);
+    margin: 0 50px 20px 0;
+}
 
 
 /* <section> styles */
 .flex-row {
-    margin: 30px 10px 30px 80x;
-}
-
-.section-title {
     display: flex;
-    justify-content: space-around;
-    height: 250px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border:rgba(0, 0, 0, 0.5) 1px solid;
 }
-.flex-row div {
-    display:inline-block;
+.section-title .content {
+    display: flex;
+    align-items: stretch;
 }
+
 .section-title {
-    border-right: solid 3px var(--primary-color);
-    width: 175px;
-
+    margin: 0 0 0 0px;
+    width: 250px;
+    min-height: 250px;
+    padding: 20px;
+    border:rgba(0, 0, 0, 0.5) 1px solid;
 }
 
+.section-title h2 {
+    border-right: solid 3px var(--primary-color);
+    height: 100%;
+    color: var(--primary-color);
+    padding: 20px;
+    float: right;
+}
+
+.section-title h3 {
+    color: var(--primary-color);
+    height: 100%;
+}
+
+.content {
+    border:rgba(0, 0, 0, 0.5) 1px solid;
+    padding: 20px;
+    width: 80%;
+    height: 100%
+}
+
+.about-me p {
+    margin: 10% 0 10% 0;
+}
+
+.first-project {
+    border:var(--tertiary-color) 10px solid;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 1% 1% 1%;
+}
+.first-project div {
+    height: 280px;
+    border:var(--tertiary-color) 10px solid;
+    display: flex;
+    flex-wrap: wrap;
+    width: 48%;
+    justify-content: space-between;
+    align-content: space-around;
+    margin: 3.25% 0 1% 0;
+}
+.first-project h3 {
+    color: var(--primary-color);
+    border: var(--tertiary-color) 20px solid;
+    background-color: var(--tertiary-color);
+    float: left;
+    margin: 48% 0 48% 0;
+}
+
+
+.first-project:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+
+.projects {
+    border:rgba(0, 0, 0, 0.5) 1px solid;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: stretch;
+    margin: 1% 1% 1% 1%;
+}
+
+.projects div {
+    height: 280px;
+    border:var(--tertiary-color) 10px solid;
+    display: flex;
+    flex-wrap: wrap;
+    width: 48%;
+    justify-content: space-between;
+    align-content: space-around;
+    margin: 3.25% 0 1% 0;
+}
+
+.projects div h3 {
+    color: var(--primary-color);
+    border:var(--tertiary-color) 20px solid;
+    background-color: var(--tertiary-color);
+    float: left;
+}
+.run-buddy-img {
+    background-image: url("./images/run_buddy.png");  
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    background-position: 80%;
+}
 .resume-img {
     text-align: center;
     width: 175px;
