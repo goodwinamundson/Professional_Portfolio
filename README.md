@@ -28,6 +28,12 @@ https://github.com/goodwinamundson/professional_portfolio
 
 can be accessed with the link: 
 
-https://goodwinamundson.github.io/Professional_Portfolio/index.html 
+https://goodwinamundson.github.io/Professional_Portfolio 
 
-The second link brings you
+The second link brings you to the live page.
+
+Even though I know this assignment was pretty sloppy so far, I am going to go back and fix everything in the coming days. I know that doing well on this assignment benefits me a lot more outside of this course. 
+
+##credits
+
+I used some w3schools.com and github.com as guides as well as using some code from my other projects on my github profile.

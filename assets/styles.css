@@ -117,9 +117,16 @@ header nav ul li a:hover {
     border-right: solid 3px var(--primary-color);
     height: 100%;
     color: var(--primary-color);
-    padding: 20px;
+    padding: 10px;
     float: right;
+    text-align: right;
 }
+
+.section-title h2 img {
+    margin-left: 1%;
+}
+
+
 
 .section-title h3 {
     color: var(--primary-color);
