@@ -126,18 +126,6 @@ header nav ul li a:hover {
     height: 100%;
 }
 
-.my-photo {
-    background-image: url("./images/profile\ pic.jpeg"); 
-   
-    display: flex;
-
-    
-    overflow: hidden;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
-
 .content {
     padding: 20px;
     width: 80%;
@@ -169,6 +157,7 @@ header nav ul li a:hover {
 }
 
 .projects {
+
     width: 100%;
     height: 100%;
     display: flex;
@@ -247,6 +236,29 @@ header nav ul li a:hover {
     opacity: 0.5;
 }
 
+.contact {
+
+}
+.contact div {
+    border:var(--tertiary-color) 10px solid;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 40%;
+    height: 100px;
+    justify-content: space-between;
+    align-content: stretch;
+    margin: 3.25% 0 1% 0;
+    text-align: center;
+    background-color: var(--tertiary-color);
+}
+.contact div h3 a {
+    display: inline-block;
+    text-align: center;
+    color: var(--primary-color);
+    width: 40%;
+    float: 
+}
 
 .resume-img {
     text-align: center;
@@ -261,3 +273,81 @@ footer {
 .footer-class {
     justify-content: center;
 }
+
+
+/* media queries for screen sizes*/
+
+@media screen and (max-width: 980px) {
+
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+  
+    footer h2, footer div {
+      text-align: center;
+      width: 100%;
+    }
+  
+    .hero-cta, .hero-form {
+      width: 100%;
+    }
+    
+    .hero-cta {
+      text-align: center;
+    }
+  
+    .content {
+      width: 70%;
+    }
+    .section-title {
+        width: 30%;
+    }
+}
+    /* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+
+    .hero-cta {
+        text-align: center;
+    }
+
+    .projects {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1;
+    }
+}
+@media screen and (max-width: 575px) {
+
+    .hero-form button {
+        width: 100%;
+      }
+    
+      .section-title {
+        width: 30%;
+      }
+      
+      .content {
+          width: 60%;
+      }
+}
+  
+  
