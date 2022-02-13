@@ -260,6 +260,11 @@ header nav ul li a:hover {
     overflow: hidden;
     object-fit: cover;
 }
+
+.horiseon img {
+    max-width: auto;
+}
+
 .horiseon h3 {
     z-index: 9999;
     position: relative;
