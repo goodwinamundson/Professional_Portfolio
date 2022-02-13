@@ -155,12 +155,19 @@ header nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    overflow: none;
     object-fit: cover;
 }
 
 .first-project:hover {
     opacity: .5;
+}
+
+.first-project h3 {
+    color: var(--primary-color);
+    border:var(--tertiary-color) 20px solid;
+    background-color: var(--tertiary-color);
+    float: left;
 }
 
 .projects {
@@ -243,9 +250,30 @@ header nav ul li a:hover {
     opacity: 0.5;
 }
 
+
+
+
+.horiseon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    object-fit: cover;
+}
+.horiseon h3 {
+    z-index: 9999;
+    position: relative;
+    float: left;
+}
+.horiseon:hover {
+    opacity: 0.5;
+}
+
+
 .contact {
 
 }
+
 .contact div {
     border:var(--tertiary-color) 10px solid;
     display: flex;
